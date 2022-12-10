@@ -8,10 +8,16 @@ a {
     text-decoration: none;
 }
 
-body {
-    max-width: 1400px;
+li {
+    list-style: none;
 }
 
+body {
+    max-width: 1400px;
+    margin: auto;
+}
+
+/************************** Header Supérieur *************************/
 .header-sup {
     display: flex;
     justify-content: space-between;
@@ -20,7 +26,6 @@ body {
 
 .div-logo {
     margin-top: 44px;
-    margin-left: 55px;
 }
 
 .logo {
@@ -29,7 +34,6 @@ body {
 
 .div-nav {
     margin-top: 48px;
-    margin-right: 77px;
 }
 
 .nav-lien:first-child {
@@ -40,4 +44,89 @@ body {
     color: #0065FC;
     font-weight: 700;
     border-top: solid 2px blue;
+}
+
+/************************** Header Inférieur *************************/
+.header-inf {
+    margin-top: 63px;
+}
+
+.ville-nature {
+    margin-top: 8px;
+}
+
+.search-location {
+    margin-top: 20px;
+}
+
+.icon-location {
+    background-color: #F2F2F2;
+    padding: 16px 15px 16px 18px;
+    border-radius: 15px 0 0 15px;
+    font-size: 1.15em;
+}
+
+#location {
+    padding: 14px 10px;
+    border: solid 1px #f2f2f2;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.button {
+    padding: 14px 16px;
+    border: solid 1px #0065FC;
+    background-color: #0065FC;
+    border-radius: 0 15px 15px 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/************************** Filtres *************************/
+.div-filtres {
+    display: inline-block;
+    margin-top: 46px;
+}
+
+.filtres,
+.div-filtres ul,
+.div-filtres ul li {
+    display: inline-block;
+}
+
+.filtres {
+    margin-right: 84px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.div-filtres li {
+    margin-right: 100px;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 10px 15px;
+    border: 1px solid #F2F2F2;
+    border-radius: 25px;
+}
+
+.div-filtres li:hover {
+    background-color: #DEEBFF;
+}
+
+.icon-filtres {
+    color: #0065FC;
+    padding-right: 10px;
+}
+
+.info-filtres {
+    margin-top: 54px;
+}
+
+.icon-info {
+    color: #0065FC;
+    border: 1px solid #F2F2F2;
+    border-radius: 100%;
+    padding: 7px 10px;
+    margin-right: 20px;
 }
