@@ -3,19 +3,23 @@
     padding: 0;
     font-family: 'Raleway', sans-serif;
 }
+
 a {
     text-decoration: none;
 }
+
 li {
     list-style: none;
 }
+
 body {
+    width: 90%;
     max-width: 1400px;
     margin: auto;
 }
 
 /************************** Header Supérieur *************************/
-.header-sup {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,8 +47,8 @@ body {
     border-top: solid 2px blue;
 }
 
-/************************** Header Inférieur *************************/
-.header-inf {
+/************************** Search *************************/
+.search {
     margin-top: 63px;
 }
 
@@ -103,7 +107,7 @@ body {
     font-size: 17px;
     font-weight: 700;
     padding: 10px 15px;
-    border: 1px solid #F2F2F2;
+    border: 2px solid #d9d9d9;
     border-radius: 25px;
 }
 
@@ -122,7 +126,7 @@ body {
 
 .icon-info {
     color: #0065FC;
-    border: 1px solid #F2F2F2;
+    border: 1px solid #D9D9D9;
     border-radius: 100%;
     padding: 7px 10px;
     margin-right: 20px;
