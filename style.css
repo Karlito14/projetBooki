@@ -2,10 +2,15 @@
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
+}
+
+h2 {
+    font-size: 22px;
 }
 
 li {
@@ -62,7 +67,7 @@ body {
 
 .icon-location {
     background-color: #F2F2F2;
-    padding: 16px 15px 16px 18px;
+    padding: 16px 15px 16px 15px;
     border-radius: 15px 0 0 15px;
     font-size: 1.15em;
 }
@@ -74,7 +79,7 @@ body {
     font-weight: 700;
 }
 
-.button {
+.button-search {
     padding: 14px 16px;
     border: solid 1px #0065FC;
     background-color: #0065FC;
@@ -82,6 +87,10 @@ body {
     color: white;
     font-size: 18px;
     font-weight: 700;
+}
+
+.icon-search {
+    display: none;
 }
 
 /************************** Filtres *************************/
@@ -92,18 +101,19 @@ body {
 
 .filtres,
 .div-filtres ul,
-.div-filtres ul li {
+.div-filtres ul li,
+.liste-filtres div {
     display: inline-block;
 }
 
 .filtres {
-    margin-right: 84px;
+    margin-right: 60px;
     font-size: 18px;
     font-weight: 700;
 }
 
 .div-filtres li {
-    margin-right: 100px;
+    margin-right: 80px;
     font-size: 17px;
     font-weight: 700;
     padding: 10px 15px;
@@ -130,4 +140,61 @@ body {
     border-radius: 100%;
     padding: 7px 10px;
     margin-right: 20px;
+}
+
+/************************** Main *************************/
+#main {
+    display: flex;
+}
+
+.hebergement {
+    width: 70%;
+    background-color: #F2F2F2;
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.card-sup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.img-card {
+    width: 240px;
+    height: 120px;
+    border-radius: 20px 20px 0 0;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+.h3-hotel {
+    padding: 4px 26px 9px 16px;
+}
+
+.prix-hotel {
+    padding: 0 26px 9px 16px;
+}
+
+.card-inf {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prix {
+    font-weight: 700;
+}
+
+.plus-hebergement {
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 40px;
 }

@@ -13,11 +13,11 @@
         <header>
             <div class="header">
                 <div class="div-logo">
-                    <img class="logo" alt="logo Booki" src="images/logo/Booki.png">
+                    <a href="#"><img class="logo" alt="logo Booki" src="images/logo/Booki.png"></a>
                 </div>
                 <div class="div-nav">
                     <nav class="nav">
-                        <a href="#" class="nav-lien">Hébergements</a>
+                        <a href="#main" class="nav-lien">Hébergements</a>
                         <a href="#" class="nav-lien">Activités</a>
                     </nav>
                 </div>
@@ -29,21 +29,81 @@
             <p class="ville-nature">En plein centre ville ou en pleine nature</p>
             <form action="" method="" class="search-location">
                 <div>
-                    <label for="location" class="icon-location"><i class="fa-solid fa-location-dot icon-location"></i></label><input type="search" name="location" id="location" value="Marseille, France" required><input type="button" class="button" value="Rechercher">
+                    <label for="location" class="icon-location"><i class="fa-solid fa-location-dot icon-location"></i></label><input type="search" name="location" id="location" value="Marseille, France" required><a href="#" type="button" class="button-search">Rechercher <i class="fa-solid fa-magnifying-glass icon-search"></i></a>
                 </div>
                 </form>
         </div>
         <!-------------------------- Filtres ---------------------->
         <div class="div-filtres">
             <p class="filtres">Filtres</p>
-            <ul>
-                <li><i class="fa-solid fa-money-bill-wave icon-filtres"></i>Économique</li>
-                <li><i class="fa-solid fa-person-dress icon-filtres"></i>Familial</li>
-                <li><i class="fa-solid fa-heart icon-filtres"></i>Romantique</li>
-                <li><i class="fa-solid fa-dog icon-filtres"></i>Animaux autorisés</li>
+            <ul class="liste-filtres">
+                    <div>
+                        <li><i class="fa-solid fa-money-bill-wave icon-filtres"></i>Économique</li>
+                        <li><i class="fa-solid fa-person-dress icon-filtres"></i>Familial</li>
+                    </div>
+                    <div>
+                        <li><i class="fa-solid fa-heart icon-filtres"></i>Romantique</li>
+                        <li><i class="fa-solid fa-dog icon-filtres"></i>Animaux autorisés</li>
+                    </div>
             </ul>
             <p class="info-filtres"><i class="fa-solid fa-info icon-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
+        <!-------------------------- Main ---------------------->
+        <main id="main">
+            <div class="hebergement">
+                <h2>Hébergements à Marseille</h2>
+                <div class="card-sup">
+                    <a href="#">
+                        <article class="card">
+                            <img src="images/hebergements/4_small/la_canebiere.jpg" alt="Auberge La Canebiere" class="img-card">
+                            <h3 class="h3-hotel">Auberge La Canebière</h3>
+                            <p class="prix-hotel">Nuit à partir de 25<span class="prix">€</span></p>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                        <img src="images/hebergements/4_small/hotel_du_port.jpg" alt="Hotel du Port" class="img-card">
+                        <h3 class="h3-hotel">Hotel du Port</h3>
+                        <p class="prix-hotel">Nuit à partir de 52<span class="prix">€</span></p>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="images/hebergements/4_small/hotel_les_mouettes.jpg" alt="Hotel les Mouettes" class="img-card">
+                            <h3 class="h3-hotel">Hotel Les Mouettes</h3>
+                            <p class="prix-hotel">Nuit à partir de 76<span class="prix">€</span></p>
+                        </article>
+                    </a>
+                </div>
+                <div class="card-inf">
+                    <a href="#">
+                        <article class="card">
+                            <img src="images/hebergements/4_small/hotel_la_mer.jpg" alt="Hotel la mer" class="img-card">
+                            <h3 class="h3-hotel">Hotel de la mer</h3>
+                            <p class="prix-hotel">Nuit à partir de 46<span class="prix">€</span></p>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="images/hebergements/4_small/auberge_le_panier.jpg" alt="Auberge le panier" class="img-card">
+                            <h3 class="h3-hotel">Auberge le panier</h3>
+                            <p class="prix-hotel">Nuit à partir de 23<span class="prix">€</span></p>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="images/hebergements/4_small/hotel_chez_amina.jpg" alt="Hotel chez Amina" class="img-card">
+                            <h3 class="h3-hotel">Hotel Chez Amina</h3>
+                            <p class="prix-hotel">Nuit à partir de 96<span class="prix">€</span></p>
+                        </article>
+                    </a>
+                </div>
+                <a href="#" class="plus-hebergement">Afficher plus</a>
+            </div>
+            <div class="populaire">
+
+            </div>
+        </main>
              
     </body>
     
