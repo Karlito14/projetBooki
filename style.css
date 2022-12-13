@@ -43,6 +43,10 @@ body {
     margin-top: 48px;
 }
 
+.nav-lien {
+    padding-top: 46px;
+}
+
 .nav-lien:first-child {
     margin-right: 67px;
 }
@@ -95,31 +99,40 @@ body {
 }
 
 /************************** Filtres *************************/
-.div-filtres {
-    display: inline-block;
+.div-filtres { 
     margin-top: 46px;
+}
+
+.filtres-nav{
+    display: flex;
+    align-items: center;
 }
 
 .filtres,
 .div-filtres ul,
 .div-filtres ul li,
-.liste-filtres div {
+.liste-filtres {
     display: inline-block;
 }
 
 .filtres {
-    margin-right: 60px;
+    margin-right: 40px;
     font-size: 18px;
     font-weight: 700;
 }
 
 .div-filtres li {
-    margin-right: 80px;
+    margin-right: 30px;
     font-size: 17px;
     font-weight: 700;
     padding: 10px 15px;
     border: 2px solid #d9d9d9;
     border-radius: 25px;
+}
+
+
+.div-filtres ul li:nth-child(4){
+    margin-right: 0;
 }
 
 .div-filtres li:hover {
@@ -160,19 +173,23 @@ body {
 .card-sup {
     display: flex;
     justify-content: space-between;
-    margin-top: 23px;
+    flex-wrap: wrap;
     margin-bottom: 30px;
+}
+
+.lien-card{
+    width: 30%;
 }
 
 .card {
     background-color: white;
+    margin-top: 23px;
     border-radius: 20px;
-    margin-right: 20px;
-    box-shadow: 0px 0px 10px #D9D9D9;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
 }
 
 .img-card {
-    width: 240px;
+    width: 100%;
     height: 120px;
     border-radius: 20px 20px 0 0;
     border: 5px solid white;
@@ -180,11 +197,11 @@ body {
 }
 
 .h3-hotel {
-    padding: 4px 26px 9px 16px;
+    padding: 4px 0 9px 16px;
 }
 
 .prix-hotel {
-    padding: 0 26px 9px 16px;
+    padding: 0 0px 9px 16px;
     font-size: 14px;
 }
 
@@ -199,11 +216,6 @@ body {
 
 .star-note:nth-child(8) {
     color: #F2F2F2;
-}
-
-.card-inf {
-    display: flex;
-    justify-content: space-between;
 }
 
 .prix {
@@ -224,6 +236,9 @@ body {
     margin-top: 40px;
     margin-left: 40px;
     padding: 40px 40px 34px 37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .p-populaire {
@@ -232,28 +247,27 @@ body {
 }
 
 .icon-growth {
-    color: #0065FC ;
+    color: #0065FC;
 }
 
 .card-populaire {
     display: flex;
-    justify-content: space-around;
     background-color: white;
     border-radius: 20px;
-    margin-top: 26px;
-    box-shadow: 0px 0px 10px #D9D9D9;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
 }
 
 .img-populaire {
-    width: 137px;
-    height: 144px;
+    width: 40%;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
     border: 5px solid white;
 }
 
 .info-populaire {
-    padding: 16px 22px 12px 15px;
+    width: 60%;
+    padding: 16px 20px 10px 8px;
 }
 
 .h3-populaire {
@@ -264,28 +278,33 @@ body {
     margin-top: 7px;
     font-size: 14px;
 }
-
-.info-populaire i {
-    color: #0065FC;
+.div-star{
     margin-top: 40px;
 }
 
-.info-populaire i:nth-child(7) {
+.div-star i {
+    color: #0065FC;
+}
+
+.div-star i:nth-child(5) {
     color: #F2F2F2;
 }
 
 /************************** Activités *************************/
 
-#activite{
+#activite {
     margin-top: 60px;
 }
-.h2-activite{
+
+.h2-activite {
     margin-bottom: 18px;
 }
-.activite-flex{
+
+.activite-flex {
     display: flex;
     justify-content: space-between;
 }
+
 .img-activite {
     max-width: 330px;
     width: 100%;
@@ -293,31 +312,35 @@ body {
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
-.article-activite{
+
+.article-activite {
     border-radius: 20px;
-    box-shadow: 0px 0px 10px #D9D9D9;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
 }
 
-.h3-activite{
+.h3-activite {
     padding: 20px;
     font-size: 16px;
 }
 
 /************************** Footer *************************/
-.footer{
+.footer {
     background-color: #F2F2F2;
-    margin-top:60px;
+    margin-top: 60px;
     display: flex;
     padding: 45px 0 58px 70px;
 }
-.footer div{
-    margin-right: 230px;
+
+.footer div {
+    margin-right: 180px;
 }
 
-.h4-footer{
+.h4-footer {
     font-size: 18px;
     margin-bottom: 20px;
 }
-.li-footer{
+
+.li-footer {
     margin-bottom: 12px;
 }
