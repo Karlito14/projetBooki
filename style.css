@@ -99,11 +99,11 @@ body {
 }
 
 /************************** Filtres *************************/
-.div-filtres { 
+.div-filtres {
     margin-top: 46px;
 }
 
-.filtres-nav{
+.filtres-nav {
     display: flex;
     align-items: center;
 }
@@ -130,8 +130,7 @@ body {
     border-radius: 25px;
 }
 
-
-.div-filtres ul li:nth-child(4){
+.div-filtres ul li:nth-child(4) {
     margin-right: 0;
 }
 
@@ -177,7 +176,7 @@ body {
     margin-bottom: 30px;
 }
 
-.lien-card{
+.lien-card {
     width: 30%;
 }
 
@@ -236,9 +235,6 @@ body {
     margin-top: 40px;
     margin-left: 40px;
     padding: 40px 40px 34px 37px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .p-populaire {
@@ -248,6 +244,16 @@ body {
 
 .icon-growth {
     color: #0065FC;
+}
+
+.div-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.div-card a:nth-child(2) {
+    margin: 30px 0;
 }
 
 .card-populaire {
@@ -278,7 +284,8 @@ body {
     margin-top: 7px;
     font-size: 14px;
 }
-.div-star{
+
+.div-star {
     margin-top: 40px;
 }
 
@@ -343,4 +350,43 @@ body {
 
 .li-footer {
     margin-bottom: 12px;
+}
+
+/************************** Tablette *************************/
+@media all and (min-width: 769px) and (max-width: 991px) {
+    #main {
+        flex-direction: column;
+    }
+
+    .hebergement,
+    .populaire {
+        width: 100%;
+    }
+
+    .populaire {
+        margin-left: 0;
+        padding-bottom: 0;
+    }
+
+    .populaire a {
+        width: 30%;
+        display: inline-block;
+    }
+
+    .div-card {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .card-populaire {
+        margin-top: 0;
+    }
+
+    .div-star-margin {
+        margin-top: 21px;
+    }
+
+    .img-activite {
+        height: 211px;
+    }
 }
