@@ -24,11 +24,10 @@ body {
     margin: auto;
 }
 
-/************************** Header Supérieur *************************/
+/************************** Header *************************/
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .div-logo {
@@ -159,6 +158,7 @@ body {
 /***** Hébergement*****/
 #main {
     display: flex;
+    justify-content: space-between;
 }
 
 .hebergement {
@@ -229,11 +229,10 @@ body {
 
 /***** Populaire *****/
 .populaire {
-    width: 30%;
+    width: 28%;
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-top: 40px;
-    margin-left: 40px;
     padding: 40px 40px 34px 37px;
     position: relative;
 }
@@ -257,6 +256,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.div-card a{
+    width: 100%;
 }
 
 .div-card a:nth-child(2) {
@@ -368,7 +371,7 @@ body {
 }
 
 /************************** Tablette *************************/
-@media all and (min-width: 769px) and (max-width: 991px) {
+@media all and (min-width: 768px) and (max-width: 991px) {
     #main {
         flex-direction: column;
     }
@@ -405,14 +408,95 @@ body {
         margin-top: 21px;
     }
 
-    .article-activite {
-        width: 205px;
-    }
-
     .img-activite {
         height: 211px;
     }
 }
 
 /************************** Téléphone *************************/
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    body{
+        width: 100%;
+    }
+    .header{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-lien{
+        padding-top: 0;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #F2F2F2;
+    }
+    .nav-lien:hover{
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+    }
+    .search{
+        margin: 30px 20px ;
+    }
+    .div-filtres{
+        margin: 0 20px 17px 20px;
+    }
+
+    .filtres-nav{
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .liste-filtres li{
+        margin-top: 15px;
+        width: 40%;
+    }
+    .info-filtres{
+        margin-top: 30px;
+    }
+    #main{
+        flex-direction: column-reverse;
+    }
+    .populaire{
+        margin-top: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    .img-populaire{
+        height: 200px;
+    }
+    .hebergement{
+        width: 100%;
+        background-color: white;
+        margin-top: 0;
+        border-radius: 0;
+    }
+    .card-sup{
+        flex-direction: column;
+    }
+    .lien-card{
+        width: 100%;
+    }
+    .plus-hebergement{
+        display: none;
+    }
+    #activite{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .activite-flex{
+        flex-direction: column;
+    }
+    .activite-flex a{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .img-activite{
+        max-width: 100%;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer div:nth-child(2){
+        margin: 40px 0;
+    }
+}
