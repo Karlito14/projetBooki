@@ -258,7 +258,7 @@ body {
     justify-content: space-between;
 }
 
-.div-card a{
+.div-card a {
     width: 100%;
 }
 
@@ -358,7 +358,7 @@ body {
 }
 
 .footer div {
-    margin-right: 180px;
+    width: 40%;
 }
 
 .h4-footer {
@@ -415,88 +415,114 @@ body {
 
 /************************** Téléphone *************************/
 @media screen and (max-width: 767px) {
-    body{
+    body {
         width: 100%;
     }
-    .header{
+
+    .header {
         flex-direction: column;
         text-align: center;
     }
-    .nav{
+
+    .nav {
         display: flex;
         justify-content: space-around;
     }
-    .nav-lien{
+
+    .nav-lien {
+        width: 50%;
         padding-top: 0;
         padding-bottom: 20px;
         border-bottom: 3px solid #F2F2F2;
     }
-    .nav-lien:hover{
+
+    .nav-lien:first-child {
+        margin-right: 0;
+    }
+
+    .nav-lien:hover {
         border-bottom: 3px solid #0065FC;
         border-top: none;
     }
-    .search{
-        margin: 30px 20px ;
+
+    .search {
+        margin: 30px 20px;
     }
-    .div-filtres{
+
+    .div-filtres {
         margin: 0 20px 17px 20px;
     }
 
-    .filtres-nav{
+    .filtres-nav {
         flex-direction: column;
         align-items: baseline;
     }
-    .liste-filtres li{
+
+    .liste-filtres li {
         margin-top: 15px;
         width: 40%;
     }
-    .info-filtres{
+
+    .info-filtres {
         margin-top: 30px;
     }
-    #main{
+
+    #main {
         flex-direction: column-reverse;
     }
-    .populaire{
+
+    .populaire {
         margin-top: 0;
         width: 100%;
         border-radius: 0;
     }
-    .img-populaire{
+
+    .img-populaire {
         height: 200px;
     }
-    .hebergement{
+
+    .hebergement {
         width: 100%;
         background-color: white;
         margin-top: 0;
         border-radius: 0;
     }
-    .card-sup{
+
+    .card-sup {
         flex-direction: column;
     }
-    .lien-card{
+
+    .lien-card {
         width: 100%;
     }
-    .plus-hebergement{
+
+    .plus-hebergement {
         display: none;
     }
-    #activite{
+
+    #activite {
         margin-right: 20px;
         margin-left: 20px;
     }
-    .activite-flex{
+
+    .activite-flex {
         flex-direction: column;
     }
-    .activite-flex a{
+
+    .activite-flex a {
         width: 100%;
         margin-top: 20px;
     }
-    .img-activite{
+
+    .img-activite {
         max-width: 100%;
     }
-    .footer{
+
+    .footer {
         flex-direction: column;
     }
-    .footer div:nth-child(2){
+
+    .footer div:nth-child(2) {
         margin: 40px 0;
     }
 }
