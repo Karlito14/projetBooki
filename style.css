@@ -94,7 +94,7 @@ body {
 }
 
 .icon-search {
-    display: none ;
+    display: none !important;
 }
 
 /************************** Filtres *************************/
@@ -376,6 +376,19 @@ body {
         flex-direction: column;
     }
 
+    .filtres{
+        margin-right: 20px;
+    }
+
+    .div-filtres li{
+        margin-right: 15px;
+        font-size: 13px;
+    }
+
+    .info-filtres{
+        margin-top: 30px;
+    }
+
     .hebergement,
     .populaire {
         width: 100%;
@@ -461,7 +474,7 @@ body {
         display: none;
     }
     .icon-search{
-        display: inline-block;
+        display: inline-block !important; 
         padding: 9px 5px 10px;
         border: solid 1px #0065FC;
         background-color: #0065FC;
@@ -479,10 +492,15 @@ body {
         align-items: baseline;
     }
 
+    .liste-filtres{
+        width: 100%;
+    }
+
     .liste-filtres li {
         margin-top: 15px;
         width: 40%;
         margin-right: 10px;
+        font-size: 11px;
     }
 
     .info-filtres {
@@ -497,10 +515,7 @@ body {
         margin-top: 0;
         width: 100%;
         border-radius: 0;
-    }
-
-    .img-populaire {
-        height: 200px;
+        padding: 40px 20px;
     }
 
     .hebergement {
@@ -508,6 +523,7 @@ body {
         background-color: white;
         margin-top: 0;
         border-radius: 0;
+        padding: 40px 20px 0;
     }
 
     .card-sup {
@@ -546,6 +562,7 @@ body {
 
     .footer {
         flex-direction: column;
+        padding-left: 30px;
     }
 
     .footer div:nth-child(2) {
