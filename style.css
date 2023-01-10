@@ -27,10 +27,7 @@ body {
 /************************** Header *************************/
 .header {
     display: flex;
-    justify-content: space-between;
-}
-
-.div-logo {
+    justify-content: space-between; 
     margin-top: 44px;
 }
 
@@ -38,12 +35,10 @@ body {
     width: 61px;
 }
 
-.div-nav {
-    margin-top: 48px;
-}
-
 .nav-lien {
-    padding-top: 46px;
+    padding-top: 42px;
+    border-top: solid 2px #fff;
+    transition: all 0.4s;
 }
 
 .nav-lien:first-child {
@@ -53,12 +48,15 @@ body {
 .nav-lien:hover {
     color: #0065FC;
     font-weight: 700;
-    border-top: solid 2px blue;
+    border-top: solid 2px #0065FC;
 }
 
 /************************** Search *************************/
 .search {
     margin-top: 63px;
+}
+.h1-search{
+    font-size: 24px;
 }
 
 .ville-nature {
@@ -81,6 +79,12 @@ body {
     border: solid 1px #f2f2f2;
     font-size: 18px;
     font-weight: 700;
+    outline: none; 
+    transition: border 0.3s;
+}
+
+#location:focus{
+    border: solid 1px #0065FC;
 }
 
 .button-search {
@@ -94,7 +98,7 @@ body {
 }
 
 .icon-search {
-    display: none !important;
+    visibility: hidden;
 }
 
 /************************** Filtres *************************/
@@ -107,10 +111,7 @@ body {
     align-items: center;
 }
 
-.filtres,
-.div-filtres ul,
-.div-filtres ul li,
-.liste-filtres {
+.div-filtres ul li{
     display: inline-block;
 }
 
@@ -127,6 +128,8 @@ body {
     padding: 10px 15px;
     border: 2px solid #d9d9d9;
     border-radius: 25px;
+    transition: all 0.3s;
+
 }
 
 .div-filtres ul li:nth-child(4) {
@@ -185,6 +188,15 @@ body {
     margin-top: 23px;
     border-radius: 20px;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+    height: 230px;
+    position: relative;
+    transition: all 0.4s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+
 }
 
 .img-card {
@@ -192,29 +204,33 @@ body {
     height: 120px;
     border-radius: 20px 20px 0 0;
     border: 5px solid white;
+    border-bottom: none;
     object-fit: cover;
 }
 
 .h3-hotel {
-    padding: 4px 0 9px 16px;
+    padding: 0 10px 9px 16px;
 }
 
 .prix-hotel {
-    padding: 0 0px 9px 16px;
-    font-size: 14px;
+    padding-left: 16px;
+    font-size: 15px;
+}
+
+.div-star-hotel{
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
 }
 
 .star-note {
     color: #0065FC;
-    margin-bottom: 11px;
+    filter: drop-shadow(0 0 0.2rem #0065FC);
 }
 
-.star-note:nth-child(4) {
-    margin-left: 16px;
-}
-
-.star-note:nth-child(8) {
+.star-note:nth-child(5) {
     color: #F2F2F2;
+    filter: drop-shadow(0 0 0.2rem gray);
 }
 
 .prix {
@@ -223,8 +239,8 @@ body {
 
 .plus-hebergement {
     font-weight: 700;
-    display: inline-block;
-    margin-top: 40px;
+    display: block;
+    margin-top: 50px;
 }
 
 /***** Populaire *****/
@@ -305,10 +321,12 @@ body {
 
 .div-star i {
     color: #0065FC;
+    filter: drop-shadow(0 0 0.2rem #0065FC);
 }
 
 .div-star i:nth-child(5) {
     color: #F2F2F2;
+    filter: drop-shadow(0 0 0.2rem gray);
 }
 
 /************************** Activités *************************/
@@ -348,10 +366,10 @@ body {
     
 }
 
-
 .h3-activite {
     padding: 20px;
     font-size: 16px;
+    height: 70px;
 }
 
 /************************** Footer *************************/
@@ -416,8 +434,6 @@ body {
         margin-top: 0;
     }
 
-    
-
     .img-activite {
         height: 211px;
     }
@@ -437,6 +453,7 @@ body {
     .nav {
         display: flex;
         justify-content: space-around;
+        margin-top: 40px;
     }
 
     .nav-lien {
@@ -460,24 +477,32 @@ body {
     }
 
     .icon-location{
-        padding: 8px 8px 11px;
+        padding: 8px 10px 11px;
     }
     #location{
         font-size: 16px;
         padding: 8px;
-        max-width: 180px;
+        width: 60%;
     }
     .button-search{
         display: none;
     }
     .icon-search{
-        display: inline-block !important; 
-        padding: 9px 5px 10px;
+        visibility: visible;
+        cursor: pointer;
+        display: inline-block; 
+        padding: 9px 9px 10px;
         border: solid 1px #0065FC;
         background-color: #0065FC;
         border-radius: 0 15px 15px 0;
         color: white;
         font-size: 16px;
+    }
+
+    .search-location{
+        text-align: center;
+        display: inline-block;
+        width: 100%;
     }
 
     .div-filtres {
@@ -486,7 +511,7 @@ body {
 
     .filtres-nav {
         flex-direction: column;
-        align-items: baseline;
+        align-items: flex-start;
     }
 
     .liste-filtres{
@@ -495,13 +520,18 @@ body {
 
     .liste-filtres li {
         margin-top: 15px;
-        width: 40%;
+        width: 44%;
         margin-right: 10px;
-        font-size: 11px;
+        font-size: 12px;
+        padding: 10px 5px;
     }
 
     .info-filtres {
         margin-top: 30px;
+    }
+
+    .icon-filtres{
+        padding-right: 5px;
     }
 
     .div-filtres ul li:nth-child(4) {
@@ -510,6 +540,10 @@ body {
 
     #main {
         flex-direction: column-reverse;
+    }
+
+    .card{
+        height: 210px;
     }
 
     .populaire {
@@ -560,6 +594,10 @@ body {
         margin-right: 0;
     }
 
+    .h3-activite{
+        height: auto;
+    }
+
     .img-activite {
         max-width: 100%;
         height: 211px;
@@ -568,6 +606,10 @@ body {
     .footer {
         flex-direction: column;
         padding-left: 30px;
+    }
+
+    .footer div{
+        width: 100%;
     }
 
     .footer div:nth-child(2) {
